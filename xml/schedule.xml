@@ -3,17 +3,18 @@
 <schedule>
 	<class>
 		<week>Week 1</week>
-		<date>August 25</date>
+		<date>January 25</date>
 		<learning-objective>
-			<objective>Students will differentiate copyediting from comprehensive editing</objective>
+			<objective>Students will be able to define web presence</objective>
+			<objective>Students will be able to articulate the importance of web presence.</objective>
+			<objective>Students will be able to outline the key components of web presence.</objective>
 		</learning-objective>
 		<class-activities>
 			<activity>Introductions and overview of course</activity>
 			<activity>Human survey</activity>
-			<activity>How is technical editing relevant to your life?</activity>
-			<activity>Assign/maybe work on grammar diagnostic</activity>
-			<activity>Assign 4.1</activity>
-			<activity>Assign 4.3 (optional practice)</activity>
+			<activity>Review syllabus and course policies</activity>
+			<activity>Introduction to technology</activity>
+			<activity>Google activity</activity>
 		</class-activities>
 		<readings>
 			<article>N/A</article>
@@ -23,57 +24,58 @@
 		</assignments>
 	</class>
 		<class>
-		<week>Week 1</week>
-		<date>August 27</date>
+		<week>Week 2</week>
+		<date>January 26</date>
 		<learning-objective>
-			<objective>Students will be able to correct sentences that have grammar errors.</objective>
-			<objective>Students will be able to use copymarks correctly.</objective>
+			<objective>Students will be able to describe why and how people come to web sites.</objective>
+			<objective>Students will be able to describe how navigation, search, design, and technology all support content.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Review grammar diagnostic, 4.1, and 4.3</activity>
-			<activity>Copymarks practice and review</activity>
-			<activity>Lecture - Grammar Review</activity>
-			<activity>Grammar races</activity>
-			<activity>Assign 10.1</activity>
-			<activity>Assign practice copyediting test</activity>
+			<activity>Web search activity</activity>
+			<activity>What is content?</activity>
+			<activity>Discuss HTML/CSS Website Project</activity>
 		</class-activities>
 		<readings>
-			<article>Rude ch. 4 - Marking Paper Copy</article>
-			<article>Rude ch. 7 - Basic Copyediting: An Introduction</article>
-			<article>Rude ch. 10 - Grammar and usage</article>
+			<article>Redish Chapters 1 and 6</article>
 		</readings>
 		<assignments>
-			<homework>Grammar Diagnostic</homework>
-			<homework>Exercise 4.1</homework>
-			<homework>Exercise 4.3 (optional practice)</homework>
+			<homework></homework>
+			
 		</assignments>
 	</class>
 	<class>
 		<week>Week 2</week>
-		<date>September 3</date>
+		<date>January 28</date>
 		<learning-objective>
-			<objective>Students will be able to correct sentences that have punctuation errors.</objective>
-			<objective>Students will be able to identify common errors when editing quantitative material.</objective>
+			<objective>Students will be able to describe what makes a website “good”</objective>
+			<objective>Students will be able to conduct a heuristic evaluation.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Quick review activity</activity>
-			<activity>Finish Grammar lesson</activity>
-			<activity>Lecture - Punctuation</activity>
-			<activity>Punctuation Races</activity>
-			<activity>Assign 11.1 Part 1</activity>
+			<activity>Web evaluation activity</activity>
+			<activity>What makes a website “good”? discussion and Redish discussion</activity>
+			<activity>Heuristic evaluations short lecture</activity>
+			<activity>Small group heuristic evaluation</activity>
+			<activity>HTML/CSS questions</activity>
 		</class-activities>
 		<readings>
-			<article>Rude ch. 8 - Coyediting for consistency</article>
-			<article>Rude ch. 11 - Punctuation</article>
-			<article>Rude ch. 12 - Quantitative and Technical Material</article>
+			<article_url><description>25-point Web usability checklist</description>
+				<url>http://www.usereffect.com/topic/25-point-website-usability-checklist</url>
+			</article_url>
+			<article_url><description>Qualitative Web Analytics: Heuristic Evaluations Rock!</description>
+				<url>http://www.kaushik.net/avinash/qualitative-web-analytics-expert-heuristic-evaluations/</url>
+			</article_url>
+				<article_url><description>Designing Modern Web Layouts with Professional Flair</description>
+				<url>http://designm.ag/design/designing-modern-web-layouts-with-professional-flair/</url>
+			</article_url>
+			<article>Redish chapter 3</article>
 		</readings>
 		<assignments>
-			<homework>10.1</homework>
+			<homework>TBA</homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 3</week>
-		<date>September 8</date>
+		<date>February 2</date>
 		<learning-objective>
 			<objective>Students will be able to edit for spelling, capitlization, and abbreviations.</objective>
 			<objective>Students will be able to complete a timed copyediting test.</objective>
@@ -94,193 +96,175 @@
 	</class>
 	<class>
 		<week>Week 3</week>
-		<date>September 10</date>
+		<date>February 4</date>
 		<learning-objective>
-			<objective>Students will understand the difference between copyediting and proofreading.</objective>
+			<objective>Students will be able to define content strategy</objective>
+			<objective>Students will be able to create a persona.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Review 9.1</activity>
-			<activity>Editing workflow discussion and practice</activity>
-			<activity>11.3 practice</activity>
-			<activity>Assign Copyediting Test</activity>
+			<activity>Content Strategy and Persona lecture</activity>
 		</class-activities>
 		<readings>
-			<article>Rude ch. 13 - Proofreading</article>
+			<article>Content strategy reading</article>
+			<article>Review Redish Ch. 2 and read ch. 7</article>
+			<article>Redish pp. 37-44</article>
 		</readings>
 		<assignments>
-			<homework>9.1</homework>
+			<homework>Heuristic Evaluation</homework>
 		
 		</assignments>
 	</class>
 
 	<class>
 		<week>Week 4</week>
-		<date>September 15</date>
+		<date>February 9</date>
 		<learning-objective>
-			<objective>Students will be confident to complete their copyediting test.</objective>
+			<objective>Students will be able to write in a style that is appropriate for web sites.</objective>
+			<objective>Students will be able to articulate the importance of lists in websites.</objective>
+			<objective>Students will be able to effectively use lists and tables.</objective>
+
 		</learning-objective>
 		<class-activities>
-			<activity>In-Class Practice</activity>
+			<activity>Short writing for web lecture</activity>
+			<activity>Practice Writing activity</activity>
 		</class-activities>
 		<readings>
-			<article>No new readings for today.</article>
+			<article>Redish ch. 10 and 11</article>
+			<article_url><description>A Checklist for Content Work</description>
+				<url>http://www.alistapart.com/articles/a-checklist-for-content-work</url>
+			</article_url>
 		</readings>
 		<assignments>
-			<homework>No Homework</homework>
+			<homework>Content strategy assignment</homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 4</week>
-		<date>September 17</date>
+		<date>February 11</date>
 		<learning-objective>
-			<objective>Students will be able to copyedit with the correct copymarks without using a reference guide.</objective>
+			<objective>Students will be able to write effective headlines and headings.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>Copyediting practice</activity>
+			<activity>Headline activity</activity>
+			<activity>Twitter activity</activity>
 		</class-activities>
 		<readings>
-			<article_url><description>Taking an editing test: The devil's in the details</description>
-				<url>http://www.geoff-hart.com/resources/2003/edit-test.htm</url>
-			</article_url>
+			<article>Redish Ch. 7, 8 and 9</article>
 		</readings>
 		<assignments>
-			<homework>Write a 300-word response to the article "Taking an Editing test". Guiding Question: What strategies will you use as you prepare for your editing test and why?</homework>
+			<homework>Writing Activity</homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 5</week>
-		<date>September 22</date>
+		<date>February 16</date>
 		<learning-objective>
-			<objective>Students will know what the purpose of the CMOS is.</objective>
-			<objective>Students will be able to correctly use the CMOS.</objective>
+			<objective>Students will understand the basic principles of good design.</objective>
+			<objective>Students will apply basic principles of color, space, and typography.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>CMOS Scavenger Hunt (with prizes!)</activity>
+			<activity>Short Design Discussion</activity>
 		</class-activities>
 		<readings>
-			<article_url><description>Why would anyone use the Chicago Manual of Style</description>
-				<url>http://www.quickanddirtytips.com/education/grammar/why-would-anyone-use-the-chicago-manual-of-style</url>
-			</article_url>
+			<article>Redish Ch. 3 and 13</article>
 		</readings>
 		<assignments>
-			<homework>No Homework! :)</homework>	
+			<homework></homework>	
 		</assignments>
 	</class>
  	<class>
 		<week>Week 5</week>
-		<date>September 24</date>
+		<date>February 18</date>
 		<learning-objective>
-			<objective>Students will distinguish the key characteristics of copyediting and comprehensive editing.</objective>
+			<objective>Students will be able to define the Internet.</objective>
+			<objective>Students will understand how websites are published on the internet.</objective>
+			<objective>Students will understand how a web server works.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>Comprehensive Editing lecture</activity>
-			<activity>In-Class Practice</activity>
-			<activity>Get into style presentation groups</activity>
-			<activity>Handout Wolfe reading and assign team role homework</activity>
+			<activity>How the web works lecture</activity>
+
 		</class-activities>
 		<readings>
-			<article>Rude ch. 14 - Comprehensive Editing: Definition and Process</article>
+			<article_url><description>How the web works in one easy lesson</description>
+				<url>http://mkcohen.com/how-the-web-works-in-one-easy-lesson</url>
+			</article_url>
 		</readings>
 		<assignments>
-			<homework>Copyediting Exam Due</homework>
+			<homework></homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 6</week>
-		<date>September 29</date>
+		<date>February 23</date>
 		<learning-objective>
-			<objective>Students will know the definition of style</objective>
+			<objective>Students will be able to layout four basic components of a website (header, navigation, content, and footer)</objective>
+			<objective>Students will understand the function of four basic components of a website.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>Conciseness and Parallelism Exercise</activity>
+			<activity>Components activity</activity>
+			<activity>HTML/CSS Layouts</activity>
+			<activity>Layout of a website in an hour</activity>
 		</class-activities>
 		<readings>
-			<article_url><description>Team writing chapter from Joanna Wolfe</description>
-				<url>http://courses.christopherylam.com/4190/readings/teamwork.pdf</url>
+			<article_url><description>Two column and three column css layouts</description>
+				<url>http://designm.ag/tutorials/semantic-2col-3col-css-layouts/</url>
 			</article_url>
 		</readings>
 		<assignments>
-			<homework>Come to class with a written set of team roles</homework>
+			<homework></homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 6</week>
-		<date>October 1</date>
+		<date>February 25</date>
 		<learning-objective>
-			<objective>Students will be able to edit a document for organization</objective>
+			<objective>Students will understand what content should be included in a home page.</objective>
+			<objective>Students will be able to articulate how to make their web pages findable via search engines.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>Organization and cohesion exercise</activity>
-			<activity>Work in Groups</activity>
-			<activity>Assign D+A questions 1, 4, and 5 on pages 263-265</activity>
+			<activity>Wireframe discussion</activity>
+	
 		</class-activities>
 		<readings>
-			<article>Rude ch. 17 - Organization: The Architecture of Information</article>
+			<article>Redish Ch. 4</article>
 		</readings>
 		<assignments>
-			<homework>A 150-300 word summary of client who needs job materials edited. Include information about the client, their career, and the job sector for which they are applying to. Upload to Blackboard.</homework>
-			<homework>Conciseness Contest - See Resources Page</homework>
+			<homework></homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 7</week>
-		<date>October 6</date>
+		<date>March 2</date>
 		<learning-objective>
-			<objective>Students will be able to edit a resume effectively.</objective>
+			<objective>Sitemaps</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Check for understanding activity</activity>
-			<activity>Discuss readings</activity>
-			<activity>Discuss homework</activity>
-			<activity>Resume and cover letter lecture</activity>
-			<activity>Resume analysis and activity</activity>
-			<activity>Assign article summary homework</activity>
+			<activity>Sitemaps</activity>
+			
 		</class-activities>
 		<readings>
-			<article_url><description>OPTIONAL Reading for extra credit: Charney (1992)- Writing Quality in Resumes.</description>
-				<url>http://courses.christopherylam.com/5195/wp-content/uploads/2013/01/charney_1992.pdf</url>
+			<article_url><description>Building Sitemaps</description>
+				<url>http://www.kohactive.com/blog/building-sitemaps</url>
 			</article_url>
-			<article_url><description>Introduction to and Expectations for Resumes</description>
-				<url>https://owl.english.purdue.edu/owl/resource/564/01/</url>
-			</article_url>
-			<article_url><description>Resumes (RPI)</description>
-				<url>https://www.rpi.edu/dept/cdc/students/jobsearch/resumes/resumes.html</url>
-			</article_url>
+			
 		</readings>
 		<assignments>
-			<homework>D+A 1, 4, and 5 on pages 263-265. Type out and upload to Blackboard</homework>
-			<homework>Optional assignment: Read Charney (1992) and write a 500-word response that summarizes the findings of the study and discusses key implications for editing resumes.</homework>
+			<homework></homework>
 		</assignments>
 	</class>
 	<class>
 		<week>Week 7</week>
-		<date>October 8</date>
+		<date>March 4</date>
 		<learning-objective>
-			<objective>Students will be able to edit a cover letter effectively.</objective>
+			<objective>Students will know the steps for getting from draft to final for a HTML/CSS website.</objective>
+			<objective>Students will know the strategies for last minute troubleshooting.</objective>
 		</learning-objective>
 		<class-activities>
-			<activity>Pass out handouts for active/passive and word choice/tone</activity>
-			<activity>Cover letter discussion</activity>
-			<activity>Practice resume/cover letter edit</activity>
+			<activity>Draft to final activity</activity>
+
 		</class-activities>
 		<readings>
-			<article_url><description>Cover Letter Workshop- Formatting and Organization</description>
-				<url>https://owl.english.purdue.edu/owl/resource/723/03/</url>
-			</article_url>
-			<article_url><description>Forbes: How to write a cover letter</description>
-				<url>http://www.forbes.com/sites/susanadams/2011/03/24/how-to-write-a-cover-letter/</url>
-			</article_url>
+			<article>Redish Ch. 14</article>
 		</readings>
 		<assignments>
 			<homework>Write a 300-word summary of the two articles. Compare and contrast the advice provided in each article. Upload to Blackboard.</homework>
@@ -288,53 +272,40 @@
 	</class>
 	<class>
 		<week>Week 8</week>
-		<date>October 13</date>
+		<date>March 9</date>
 		<learning-objective>
-			<objective>Students will understand the importance of building goodwill in relation to editing.</objective>
+			<objective></objective>
 		</learning-objective>
 		<class-activities>
-			<activity>No Class this week. I'll be out of town for a conference. You are still responsible for completing assignments and readings.</activity>
+			<activity>Workshop</activity>
 		</class-activities>
 		<readings>
-			<article_url><description>Locker- Building Goodwill.</description>
-				<url>http://highered.mheducation.com/olc/dl/34269/loc69587_ch02.pdf</url>
-			</article_url>
+			
 		</readings>
 		<assignments>
-			<homework>Work on job materials project and style videos</homework>
-			<homework>Odd exercises from the active vs. passive voice handout</homework>
-			<homework>Odd exercises from the word choice handout</homework>
-			<homework>Odd exercises from the tone handout</homework>
+			<homework></homework>
+
 		</assignments>
 	</class>
 	<class>
 		<week>Week 8</week>
-		<date>October 15</date>
+		<date>March 11</date>
 		<learning-objective>
-			<objective>Students will be able to phrase their editorial comments balancing politeness and clarity.</objective>
+			<objective></objective>
 		</learning-objective>
 		<class-activities>
-			<activity>No Class this week. I'll be out of town for a conference. You are still responsible for completing assignments and readings.</activity>
+			<activity></activity>
 		</class-activities>
 		<readings>
-			<article_url><description>Mackiewicz and Riley (2003)- The Technical Editor as Diplomat</description>
-				<url>http://courses.christopherylam.com/5195/wp-content/uploads/2013/01/MackiewiczRiley_Linguistic-Strategies.pdf</url>
-			</article_url>
-			<article_url><description>Albers and Marsella (2011). An analysis of student comments in comprehensive editing</description>
-				<url>http://techcomm.stc.org/wp-content/uploads/2011/04/art06.pdf</url>
-			</article_url>
-			<article_url><description>Watch this YouTube Video Lecture on Linguistic Politeness and phrasing editorial comments</description>
-				<url>https://www.youtube.com/watch?v=-45JIpIGJrM</url>
-			</article_url>
+			
 		</readings>
 		<assignments>
-			<homework>Write a 500-word summary of the two articles assigned. Include at least 5-7 specific strategies you will use in your own editing project. Extra credit opportunity- Write a 1500-word compare and contrast article of the two readings and include specific strategies you will use in your editing. Upload to Blackboard.</homework>
-			<homework>OPTIONAL: Copyediting retake is due</homework>
+			
 		</assignments>
 	</class>
 	<class>
 		<week>Week 9</week>
-		<date>October 20</date>
+		<date>March 23</date>
 		<learning-objective>
 			<objective>Students will be able to write a client memo for an editing project.</objective>
 		</learning-objective>
@@ -354,7 +325,7 @@
 	</class>
 	<class>
 		<week>Week 9</week>
-		<date>October 22</date>
+		<date>March 25</date>
 		<learning-objective>
 			<objective>No new learning objectives for this class period.</objective>
 		</learning-objective>
@@ -375,7 +346,7 @@
 	</class>
 	<class>
 		<week>Week 10</week>
-		<date>October 27</date>
+		<date>March 30</date>
 		<learning-objective>
 			<objective>Students will understand the nuances of ESL editing</objective>
 		</learning-objective>
@@ -398,7 +369,7 @@
 	</class>
 	<class>
 		<week>Week 10</week>
-		<date>October 29</date>
+		<date>April 1</date>
 		<learning-objective>
 			<objective>Students will be able to understand and edit complex or technical content not in their subject-matter area.</objective>
 		</learning-objective>
@@ -417,7 +388,7 @@
 	</class>
 	<class>
 		<week>Week 11</week>
-		<date>November 3</date>
+		<date>April 6</date>
 		<learning-objective>
 			<objective>Students will understand the conventions of an empirical research article.</objective>
 		</learning-objective>
@@ -438,7 +409,7 @@
 	</class>
 	<class>
 		<week>Week 11</week>
-		<date>November 5</date>
+		<date>April 8</date>
 		<learning-objective>
 			<objective>Students will be prepared to complete their ESL project confidently.</objective>
 		</learning-objective>
@@ -458,7 +429,7 @@
 	</class>
 	<class>
 		<week>Week 12</week>
-		<date>November 10</date>
+		<date>April 13</date>
 		<learning-objective>
 			<objective>Students will understand the core principles of visual design for web and print documents.</objective>
 		</learning-objective>
@@ -477,7 +448,7 @@
 	</class>
 			<class>
 		<week>Week 12</week>
-		<date>November 12</date>
+		<date>April 15</date>
 			<learning-objective>
 			<objective>Students will understand how editing websites differs from editing traditional print documents.</objective>
 		</learning-objective>
@@ -495,7 +466,7 @@
 	</class>
 	<class>
 	<week>Week 13</week>
-		<date>November 17</date>
+		<date>April 20</date>
 		<learning-objective>
 			<objective>Students will understand the core principles of information architecture as it relates to technical editing.</objective>
 		</learning-objective>
@@ -515,7 +486,7 @@
 	</class>
 	<class>
 		<week>Week 13</week>
-		<date>November 19</date>
+		<date>April 22</date>
 		<learning-objective>
 			<objective>Students will make progress on their ESL and final editing projects.</objective>
 		</learning-objective>
@@ -534,7 +505,7 @@
 	</class>
 	<class>
 		<week>Week 14</week>
-		<date>November 24</date>
+		<date>April 27</date>
 		<learning-objective>
 			<objective>Students will be introdcued the concepts of entrepreneurship as it relates to technical editing.</objective>
 		</learning-objective>
@@ -554,7 +525,7 @@
 	</class>
 	<class>
 		<week>Week 14</week>
-		<date>November 26</date>
+		<date>April 29</date>
 				<learning-objective>
 			<objective>Students will enjoy their Thanksgiving breaks one day early!</objective>
 		</learning-objective>
@@ -571,7 +542,7 @@
 	</class>
 	<class>
 		<week>Week 15</week>
-		<date>December 1</date>
+		<date>May 4</date>
 		<learning-objective>
 			<objective>Students will understand the overall importance and core principles of technical editing.</objective>
 		</learning-objective>
@@ -588,7 +559,7 @@
 	</class>
 		<class>
 		<week>Week 15</week>
-		<date>December 3</date>
+		<date>May 6</date>
 		<learning-objective>
 			<objective>Workshop</objective>
 		</learning-objective>
@@ -604,7 +575,7 @@
 	</class>
 	<class>
 		<week>Finals Week</week>
-		<date>December 10</date>
+		<date>May 11</date>
 		<learning-objective>
 			<objective>No new content</objective>
 		</learning-objective>
