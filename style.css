@@ -3,9 +3,7 @@ body {
 	background-color: #333333;
 }
 #container {
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 15px;
 }
 p.schedule {
 	font-size:14px;
@@ -96,15 +94,37 @@ nav ul li a:visited {
 }
 
 /* Main Content Area */
-.main-content {
+
+/* Right Column for "Resources" Page */
+
+.right-column {
+	width: 29%;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 300px;
+	padding-bottom: 20px;
+	background: #e74c3c;
+	float: right;
+	position:fixed;
+	right: 15px;
+
+}
+.main-schedule {
+	width: 100%;
 	background-color:#e74c3c; /* TO ADAPT SITE: Use lighter Color Here */
 	font-family: 'Open Sans', sans-serif;
 	min-height: 400px;
 	padding-bottom: 20px;
-	margin-top:-5px;
+}
+.main-content {
+	float:left;
+	width: 70%;
+	background-color:#e74c3c; /* TO ADAPT SITE: Use lighter Color Here */
+	font-family: 'Open Sans', sans-serif;
+	min-height: 400px;
+	padding-bottom: 20px;
 
 }
-.main-content h3 {
+.main-content h3, .right-column h3 {
 	background:#c0392b; /* TO ADAPT SITE: Use Darker Color Here */
 	color:white;
 	font-size: 22px;
@@ -113,9 +133,10 @@ nav ul li a:visited {
 	padding-top:10px;
 	padding-bottom: 10px;
 	padding-left: 20px;
+	margin-top: -5px;
 
 }
-.main-content p {
+.main-content p, .right-column p, .main-schedule p {
 	font-size:15px;
 	color: #FFF6ED;
 	font-family: 'Open Sans', sans-serif;
@@ -125,7 +146,7 @@ nav ul li a:visited {
 	margin-right: 20px;
 
 }
-.main-content ul li {
+.main-content ul li, .schedule ul li {
 	font-size: 15px;
 	font-family: 'Open Sans'; 
 	margin-top: 14px;
@@ -136,7 +157,15 @@ nav ul li a:visited {
 	margin-right: 20px;
 
 }
-.main-content ol li {
+.right-column ul li {
+	font-size: 15px;
+	font-family: 'Open Sans'; 
+	margin-top: 14px;
+	color: #FFF6ED;
+	line-height:1.4;
+	list-style-type: square;
+}
+.main-content ol li, .right-column ol li, .main-schedule ol li {
 	font-size: 15px;
 	font-family: 'Open Sans'; 
 	margin-top: 14px;
@@ -147,22 +176,21 @@ nav ul li a:visited {
 
 
 }
-.main-content ul li ul li, .main-content ol li ul li {
+.main-content ul li ul li, .main-content ol li ul li, .right-column ul li ul li, .right-column ol li ul li, .main-schedule ol li ul li, .main-schedule ul li ul li {
 	margin-left: 0px;
 }
-.main-content ul li ol li {
+.main-content ul li ol li, .right-column ul li ol li, .main-schedule ul li ol li {
 	margin-left: 0px;
 	list-style-type: decimal;
 	}
-.main-content ul li a {
+.main-content ul li a, .right-column ul li a, .main-schedule ul li a {
 	color: #FFF6ED;
 	text-decoration: none;
 }
-.main-content a.reading_link {
+.main-resources a.reading_link, .right-column a, .main-schedule a {
 	color: #FFF6ED;
 	text-decoration: underline;
 }
-
 /* Table Styles */
 
 table { 
@@ -201,9 +229,29 @@ td.wide {
 
 /* Responsive Layouts */
 
+	@media only screen and (max-width: 898px) {
+		.main-content {
+			float:none;
+			width: 100%;
+			min-height: 0px;
+			padding-bottom: 20px;
+
+	}
+		.right-column {
+			float:none;
+			width: 100%;
+			min-height: 0px;
+			padding-bottom: 20px;
+			position: relative;
+			right: 0px;
+	}	
+	#container {
+		margin: 0;
+	}
+}
 	@media only screen and (max-width: 760px),
 	(min-device-width: 768px) and (max-device-width: 1024px)  {
-		
+
 		nav ul li a {
 			text-decoration: none;
 			color: white;
@@ -240,20 +288,18 @@ td.wide {
 		position: absolute;
 		top: -9999px;
 		left: -9999px;
-	}
+		}
 		
 		tr { 
-			border: 1px solid #7D1935; 
+			border-bottom: 1px solid #e74c3c;
 		}
 
-		
 		td { 
 			/* Behave  like a "row" */
 			border: none;
-			border-bottom: 1px solid gray; 
+			border-bottom: 1px dotted white; 
 			position: relative;
 			padding-left: 40%; 
-
 		}
 		td.narrow {
 			text-align:left;
@@ -282,7 +328,7 @@ td.wide {
 			width: 100%;
 			margin-top:-3px;
 		}
-		.main-content table ul li {
+		.main-schedule table ul li {
 			margin-left: -2em;
 			width: 100%;
 			margin-top: 8px;
@@ -301,15 +347,17 @@ td.wide {
 }
 	
 	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen
-	and (min-device-width : 320px)
-	and (max-device-width : 480px) {
+		@media only screen and (max-width: 480px) {
+	
+		
+}
 			
 
 	
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
+
 
 	nav ul li{
 				display: inline;
@@ -319,6 +367,6 @@ and (max-device-width : 1024px)  {
 	color: white;
 	padding: 10px 10px 20px 10px;
 }
-		
+
 }
 

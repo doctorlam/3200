@@ -5,7 +5,7 @@
 	<head>
 	</head>
 <body>
-	<div class= "main-content">
+	<div class= "main-schedule">
 	<table>
 			<tr>
 				<th>Week</th>
