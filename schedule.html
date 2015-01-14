@@ -1,60 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <xsl:output method="html" encoding="UTF-8"/>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
+<link rel="stylesheet" type="text/css" href="style.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-
-<script language="javascript">
-function loadXMLDoc(dname)
-{
-    if (window.XMLHttpRequest)
-    {
-        xhttp=new XMLHttpRequest();
-    }
-    else
-    {
-        xhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xhttp.open("GET",dname,false);
-try {xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
-xhttp.send("");    
-return xhttp.responseXML;
-}
-function displayResult()
-{
-  // var xml;
-   //var xsl;
-   //var ex;
-   //var resultDocument
-   
-   xml = loadXMLDoc("xml/schedule.xml");
-   xsl = loadXMLDoc("xml/schedule.xsl");
-   // code for IE
-   if (window.ActiveXObject)
-   {
-        ex=xml.transformNode(xsl);
-        document.getElementById("example").innerHTML=ex;
-   }
-   
-   // code for Mozilla, FireFox, Opera, etc.
-   else if (document.implementation && document.implementation.createDocument)
-   {
-        xsltProcessor=new XSLTProcessor();
-        xsltProcessor.importStylesheet(xsl);
-        resultDocument = xsltProcessor.transformToFragment(xml,document);
-        document.getElementById("example").appendChild(resultDocument);
-   }
-}
-</script>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
 </head>
-<body onload="displayResult()">
-<div id = "container">
-   <header>
-       <h1><a href="index.html">TECM 3200 - Web Design and Development</a></h1>
+<body>
+  <div id ="container">
+    <header>
+      <h1 id ="top"><a href="index.html">TECM 3200 - Web Design and Development</a></h1>
       <h2><i>An undergraduate course covering the core competencies of writing for the web.</i></h2>
        
       <ul>
@@ -62,18 +19,873 @@ function displayResult()
           <li>Assistant Professor of Technical Communication</li>
           <li>christopher.lam at unt dot edu</li>
       </ul>
+        
+      
   </header>
-  <p class="schedule">Download a <a href="xml/hw-only.pdf">PDF</a> of homework and readings.</p>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-        <li class="current"><a href="schedule.html">Schedule</a></li>
+
+    <nav>
+  
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="current_schedule"><a href="schedule.html">Schedule</a></li>
         <li><a href="projects.html">Projects</a></li>
-      <li><a href="policies.html">Policies</a></li>
+        <li><a href="policies.html">Policies</a></li>
         <li><a href="resources.html">Resources</a></li>
-    </ul>
-  </nav>
-<div id="example" />
+        <li><a href="lab.html">Lab</a></li>
+
+      </ul>
+    </nav>
+    <div class="right-column">
+   
+    <h3>Skip to Week:
+<select name="forma" onchange="location = this.options[this.selectedIndex].value;">   
+       <option value="#top">Back to top</option>
+      <option value="#week1">Week 1</option>
+      <option value="#week2">Week 2</option>
+      <option value="#week3">Week 3</option>
+      <option value="#week4">Week 4</option>
+      <option value="#week5">Week 5</option>
+      <option value="#week6">Week 6</option>
+      <option value="#week7">Week 7</option>
+      <option value="#week8">Week 8</option>
+      <option value="#week9">Week 9</option>
+      <option value="#week10">Week 10</option>
+      <option value="#week11">Week 11</option>
+      <option value="#week12">Week 12</option>
+      <option value="#week13">Week 13</option>
+      <option value="#week14">Week 14</option>
+      <option value="#week15">Week 15</option>
+    </select>
+   </h3>
+      <h3>Project Deadlines</h3>
+        <ul>
+          <li>Project 1: HTML/CSS Portfolio due March 13 by 11:59 p.m.</li>
+          <li>Project 2: Responsive design of portfolio due April 3 by 11:59 p.m.</li>
+          <li>Final Project: Client website due final (TBA)</li>
+        </ul>
+      <h3>Quiz Schedule</h3>
+        <ul>
+          <li>Quiz 1: Content, Content Strategy, and Writing for the Web - Feb.15</li>
+          <li>Quiz 2: Design and Information Architecture - March 2</li>
+          <li>Quiz 3: Teamwork and project management - April 22</li>
+        </ul>
+    </div>
+    <div class="main-content">
+      <div class="schedule-content">
+<table>
+      <tr>
+        <th>Week</th>
+        <th>Date</th>
+        <th>Learning Objective</th>
+        <th>In-Class Activities</th>
+        <th>Read</th>
+        <th>Homework</th>
+      </tr>
+        <tr>
+        <td class="narrow" id="week1">Week 1: Introduction to Course</td>
+        <td class="narrow">January 21</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to define web presence</li>
+            <li>Students will be able to articulate the importance of web presence.</li>
+            <li>Students will be able to outline the key components of web presence.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Introductions and overview of course</li>
+              <li>Human survey</li>
+              <li>Review syllabus and course policies</li>
+              <li>Introduction to technology</li>
+              <li>Google activity</li>          
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Nothing</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Nothing</li>
+         </ul>
+        </td>
+      </tr>
+
+    <tr>
+        <td class="narrow" id="week2">Week 2: Content</td>
+        <td class="narrow">January 26</td>
+    <td class="medium">
+          <ul>
+            <li>Students will be able to describe why and how people come to web sites.</li>
+            <li>Students will be able to describe how navigation, search, design, and technology all support content.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Web search activity</li>
+            <li>What is content?</li>
+            <li>Discuss HTML/CSS Website Project</li>          
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Redish Chapters 1 and 6</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Homework goes here.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 2: Content</td>
+        <td class="narrow">January 28</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to describe what makes a website good.</li>
+            <li>Students will be able to conduct a heuristic evaluation.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Web evaluation activity</li>
+            <li>What makes a website good? discussion and Redish discussion</li>
+            <li>Heuristic evaluations short lecture</li>
+            <li>Small group heuristic evaluation</li>
+            <li>HTML/CSS questions</li>        
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li><a href="http://www.usereffect.com/topic/25-point-website-usability-checklist">25-point Web usability checklist</a></li>
+        
+            <li><a href="http://www.kaushik.net/avinash/qualitative-web-analytics-expert-heuristic-evaluations/">Qualitative Web Analytics: Heuristic Evaluations Rock!</a></li>
+       
+            <li>Redish chapter 3</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Homework goes here.</li>
+         </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="narrow" id ="week3">Week 3: Content Strategy</td>
+        <td class="narrow">February 2</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to define content strategy</li>
+            <li>Students will be able to create a persona.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Content Strategy and Persona lecture</li>
+            <li>Activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish ch. 2 and 7</li>
+              <li>Redish pp. 37-44</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Homework goes here.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 3: Content Strategy</td>
+        <td class="narrow">February 4</td>
+        <td class="medium">
+          <ul>
+            <li>Students will create a content strategy</li>
+            <li>Students will be able to create a persona.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Create content strategy for portfolio site</li>
+            <li>Create persona for portfolio site</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li><a href="http://alistapart.com/article/a-checklist-for-content-work">A Checklist for Content Work</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Homework goes here.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week4">Week 4: Writing for the Web</td>
+        <td class="narrow">February 9</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to write in a style that is appropriate for web sites.</li>
+            <li>Students will be able to articulate the importance of lists in websites.</li>
+            <li>Students will be able to effectively use lists and tables.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Writing for web lecture</li>
+            <li>Practice Activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish ch. 10 and 11</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Content Strategy homework due</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 4: Writing for the Web</td>
+        <td class="narrow">February 11</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to write effective headlines and headings.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Discuss Readings</li>
+            <li>Headline writing practice</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish ch. 7, 8, and 9</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li></li>
+         </ul>
+        </td>
+      </tr>
+        <div id="link">
+            <tr>
+        <td class="narrow" id="week5">Week 5: Design</td>
+        <td class="narrow">February 16</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand the basic principles of good design.</li>
+            <li>Students will apply basic principles of color, space, and typography.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Quiz 1: Content, Content Strategy, and Writing for the Web</li>
+            <li>Design lecture</li>
+            <li>Design activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish Ch. 3 and 13</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Study for Quiz 1: Content, Content Strategy, and Writing for the Web</li>
+            <li>5 sources of design inspiration. 150 words each describing (specifically) what draws you to the design.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 5: Design</td>
+        <td class="narrow">February 18</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand the principles of layout.</li>
+            <li>Students will be able to create design mock ups</li>
+            <li>Students will be able to design on a grid</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Layout discussion</li>
+            <li>Time to mock up sites on a grid</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Revise 5 sources based on CRAP principles.</li>
+         </ul>
+        </td>
+      </tr>
+      </div>
+
+            <tr>
+        <td class="narrow" id="week6">Week 6: Information Architecture</td>
+        <td class="narrow">February 23</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to apply principles IA to their navigation systems.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Discuss readings</li>
+            <li>Navigation activity</li>
+            <li>Labeling activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li><a href="http://www.usability.gov/what-and-why/information-architecture.html">Information Architecture: What and Why?</a></li>
+              <li><a href="http://webstyleguide.com/wsg3/3-information-architecture/index.html">Information Architecture</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Grid layout mock up</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 6: Information Architecture</td>
+        <td class="narrow">February 25</td>
+        <td class="medium">
+          <ul>
+            <li>Students will organize the content of their websites using principles of IA.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Short discussion of IA organizational strategies.</li>
+            <li>Complete in-class card sort.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li><a href="http://webstyleguide.com/wsg3/3-information-architecture/2-organizing-information.html">IA: Organizing your information</a></li>
+              <li><a href="http://webstyleguide.com/wsg3/3-information-architecture/3-site-structure.html">IA: Site structure</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Study for Quiz 2: Design and Information Architecture </li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week7">Week 7: Servers, etc.</td>
+        <td class="narrow">March 2</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand how files are stored and served on the Internet.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Quiz 2: Design and Information Architecture </li>
+            <li>The Internet: The Lecture</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Study guide</li>
+              <li><a href="http://mkcohen.com/how-the-web-works-in-one-easy-lesson">How the Web Works in one easy lesson</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Quiz 2: Study!</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 7: Servers, etc. </td>
+        <td class="narrow">March 4</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand how files interact on a website</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Discuss relative linking</li>
+            <li>Layout discussion.</li>
+            <li>Advanced CSS</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Come to class with your portfolios</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week8">Week 8: Putting it all together</td>
+        <td class="narrow">March 9</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be able to serve up their final websites</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Discuss how hosting works and options for turning in the final project</li>
+            <li>Putting together the final website</li>
+            <li>Troubleshooting and debugging</li>
+            <li>Workshop time</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Redish ch. 14</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Continue to work on portfolios</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 8: Putting it all together</td>
+        <td class="narrow">March 11</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop Day</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop Day</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Nothing New</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Final HTML5/CSS Portfolio Due on Friday, March 13 at 11:59 p.m.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week9">Week 9: Mobile Devices</td>
+        <td class="narrow">March 23</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand the princples of mobile first design</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Mobile first lecture and discussion</li>
+            <li>Mobile first activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li><a href="http://www.rackspace.com/blog/embracing-mobile-first-design/">Embracing Mobile first design</a></li>
+              <li><a href="http://www.lukew.com/ff/entry.asp?1846">An event apart: Mobile first responsive design</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Come to class with 3 sites that have TERRIBLE mobile sites. Write a 150 word description for each describing the problems.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 9: Mobile Devices</td>
+        <td class="narrow">March 25</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand media queries and how to make responsive design happen.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Responsive design concepts. Making it happen</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li><a href="http://uxmag.com/articles/a-primer-on-responsive-design">A primer on responsive design</a></li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Continue to work on project 2: Responsive design of your portfolio.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week10">Week 10: Responsive Design</td>
+        <td class="narrow">March 30</td>
+        <td class="medium">
+          <ul>
+            <li>Students will know what to do with images and other multimedia files in responsive contexts</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Discussion on images in responsive design.</li>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Nothing new</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Come to class prepared to work</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 10: Responsive design</td>
+        <td class="narrow">April 1</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Nothing new</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Project 2: Responsive Design Due on Friday, April 3 at 11:59 p.m.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week11">Week 11: Teamwork</td>
+        <td class="narrow">April 6</td>
+        <td class="medium">
+          <ul>
+            <li>Students will be prepared to work in teams.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Divide into teams</li>
+            <li>Intro to client project</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Teamwork Reading</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Come to class with your 1st and 2nd choices for teams (Design, development, or content)</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 11: Teamwork</td>
+        <td class="narrow">April 8</td>
+        <td class="medium">
+          <ul>
+            <li>Students will plan for successful teamwork</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Teamwork lecture</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Teamwork Reading</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Teamwork Charter Due</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week12">Week 12: Project Management</td>
+        <td class="narrow">April 13</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand the principles of project management.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Project management lecture.</li>
+            <li>Project plan activity</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>PM Reading</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>TBA</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 12: Project Management</td>
+        <td class="narrow">April 15</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Project Plan due.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week13">Week 13: Client Management</td>
+        <td class="narrow">April 20</td>
+        <td class="medium">
+          <ul>
+            <li>Students will understand the principles of client management.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Client management discussion.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>Client management reading.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>TBA</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 13: Client Management</td>
+        <td class="narrow">April 22</td>
+        <td class="medium">
+          <ul>
+            <li>Workshpo</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Work on final project</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week14">Week 14: Client Presentations</td>
+        <td class="narrow">April 27</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Quiz 3: Teamwork and project management</li>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Study of quiz 3: Teamwork and project management</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 14: Client Presentations</td>
+        <td class="narrow">April 29</td>
+        <td class="medium">
+          <ul>
+            <li>Students will undertand the principles of formal client presentations.</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Presentation lecture and discussion</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Work on final project</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow">Week 15: Get it done!</td>
+        <td class="narrow">May 4</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Work on final project.</li>
+         </ul>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="narrow" id="week15">Week 15: Get it done!</td>
+        <td class="narrow">May 6</td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Workshop</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>TBA</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Work on Final Project</li>
+         </ul>
+        </td>
+      </tr>
+        <div id="week16">
+            <tr>
+        <td class="narrow" id="week16">Week 16 - Finals Week</td></div>
+        <td class="narrow">TBA</td>
+        <td class="medium">
+          <ul>
+            <li>Final project due!</li>
+            </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Final presentations to the client.</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+              <li>None</li>
+          </ul>
+        </td>
+        <td class="medium">
+          <ul>
+            <li>Final project and final presentation due the day of the final.</li>
+         </ul>
+        </td>
+      </tr>       
+  </table>
 </div>
+</div> <!--div class="main-content" closed here-->
+
 </body>
 </html>
