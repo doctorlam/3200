@@ -115,7 +115,7 @@ nav ul li a:visited {
 	font-family: 'Open Sans', sans-serif;
 	min-height: 400px;
 	padding-bottom: 20px;
-	color: white;
+	color: #FFF6ED;
 	font-size: 16px;
 
 }
@@ -156,7 +156,7 @@ nav ul li a:visited {
 	font-size: 12px;
 }
 .main-content ul li, .schedule ul li {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Open Sans'; 
 	margin-top: 14px;
 	color: #FFF6ED;
@@ -166,12 +166,14 @@ nav ul li a:visited {
 	margin-right: 20px;
 
 }
+.right-column ul {
+	margin-top: -12px;
+}
 .right-column ul li {
 	font-size: 13px;
 	font-family: 'Open Sans'; 
-	margin-top: 12px;
+	margin-bottom: 6px;
 	color: #FFF6ED;
-	line-height:1.4;
 	list-style-type: square;
 }
 .main-content ol li {
@@ -202,7 +204,7 @@ table {
 		border-collapse: collapse; 
 		font-family: 'Open Sans', sans serif;
         background: #e74c3c; /* TO ADAPT SITE: Use lighter Color Here */
-        font-size: 16px;
+        font-size: 14px;
         color: white;
 	}
 table ul li {
@@ -248,11 +250,11 @@ td.wide {
 		/* Force table to not be like tables anymore */
 		table, thead, tbody, th, td, tr { 
 			display: block; 
-			font-size: 16px;
+			font-size: 14px;
 
 		}
 		table ul li {
-			font-size: 16px;
+			font-size: 14px;
 			padding-bottom:8px;
 		}
 
@@ -293,7 +295,7 @@ td.wide {
 		}
 		td.narrow {
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 18px;
 			font-family: 'Bitter', sans-serif;
 		}
 
@@ -325,6 +327,9 @@ td.wide {
 	}
 
 	@media only screen and (max-width: 850px) {
+		table ul li {
+			font-size: 14px;
+		}
 		p.schedule {
 			text-align:center;
 		}
@@ -347,7 +352,7 @@ td.wide {
 			border-bottom: 10px solid #c0392b;
 	}	
 	.right-column ul li {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.right-column h3 {
 		font-size: 22px;
